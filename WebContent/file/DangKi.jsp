@@ -78,7 +78,7 @@
                     <h4>Điều khoản và chính sách</h4>
                     <div class="input-group">
                         <input type="checkbox" id="terms" onchange="checkterms()" />
-                        <label for="terms">Nhận các thông tin và chương trình khuyến mãi qua email. Khi bạn nhấn Đăng ký, bạn đã đồng ý thực
+                        <label for="terms">Nhận các thông báo thi qua email. Khi bạn nhấn Đăng ký, bạn đã đồng ý thực
                             hiện mọi giao dịch mua bán theo điều kiện sử dụng và chính sách của chúng tôi.</label>
                     </div>
                 </div>

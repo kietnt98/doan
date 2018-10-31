@@ -45,9 +45,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right" style="">
-        <li><a href="Trangchu.html" style="color: #000000">Trang chủ</a></li>
-        <li><a href="#" style="color: #000000">Đăng nhập</a></li>
-        <li><a href="#" style="color: #000000">Đăng kí</a></li>
+        <li><a href="Trangchu.jsp" style="color: #000000">Trang chủ</a></li>
+        <li><a href="DangNhap.jsp" style="color: #000000">Đăng nhập</a></li>
+        <li><a href="DangKi.jsp" style="color: #000000">Đăng kí</a></li>
         <li><a href="#" style="color: #000000">Điều khoản</a></li>
       </ul>
     </div>
