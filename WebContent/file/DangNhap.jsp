@@ -41,7 +41,7 @@
                     <a href="" style="color: #7ed321; margin-bottom: 1em; text-decoration: none;">Quên mật khẩu</a>
                 </div>
                 <div class="input-group" style="float: left; margin-left: 70px">
-                    <a href="" style="color: #7ed321; margin-bottom: 1em; text-decoration: none;">Chưa có tài khoản</a>
+                    <a href="DangKi.jsp" style="color: #7ed321; margin-bottom: 1em; text-decoration: none;">Chưa có tài khoản</a>
                 </div>
                 </div>
                 <div>

@@ -31,7 +31,7 @@
 		</ul>
 	</div>
 	<div id="menu">
-		<nav class="navbar navbar-default navbar-fixed-top" style="position: absolute; top: 20px;" >
+		<nav class="navbar navbar-default navbar-fixed-top" style="position: absolute; top: 20px;background: #19E10A" >
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
