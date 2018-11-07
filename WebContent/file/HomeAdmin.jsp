@@ -15,7 +15,7 @@
 
 <body>
 	<div class="container">
-	<div class="container" style="background: #0EEF58">
+	<div class="container" style="background: #19E10A">
 		<div style="float: left">
 		<a href="Trangchu.jsp"><img src="img/logo/logo.png" width="200px" height="100px"></a>
 		</div>
@@ -54,16 +54,35 @@
        						 <li><a data-toggle="tab" href="#DeleteTB">Xoá Thông Báo</a></li>
      					 </ul>
  					</li>
- 					<li><a href="index.html">Đăng Xuất</a></li>
+ 					<li><a data-toggle="modal" href="#Dangnhap">Đăng xuất</a></li>
  				</ul>
  				
  				<br/>
 			</div>
-			
+			<div id="Dangnhap" class="modal fade" tabIndex="-1" role="dialog" aria-labelledby="mymodallabel" aria-hidden="true ">
+	<div class="modal-dialog">	
+		<div class="modal-content">
+			<div class="modal-body">
+					 <p style="font-size: 30px">Bạn có muốn đăng xuất không?</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" onClick="VeTrangChu()">Có</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Không</button>
+			</div>
+		</div>
+		
+	</div>
+	<script>
+		function VeTrangChu()
+		{
+			  window.location.href="./Trangchu.jsp"
+			}
+				</script>
+</div>
 			<div id="thongtin" class="tab-content" >
 				<div id="DSGV" class="tab-pane fade in active">
 				<h3>DANH SÁCH GIÁO VIÊN</h3>
-					<table border="1px">
+					<table>
 						<tr>
 							<th>Username</th>
 							<th>Họ và tên</th>
@@ -166,7 +185,7 @@
 								<label>Username:</label>
 							</div>
 							<div class="f_input">
-								<input type="email" id="email" placeholder="Enter email" name="email" height="20px;">
+								<input type="email" id="email" placeholder="Enter email" name="email" height="20px;" required>
 							</div>
 						</div> 
 						<div class="finput">
@@ -174,7 +193,7 @@
 								<label>Họ và tên:</label>
 							</div>
 							<div class="f_input">
-								<input type="text"  id="hoten" placeholder="Enter họ và tên" name="hoten">
+								<input type="text"  id="hoten" placeholder="Enter họ và tên" name="hoten" required>
 							</div>
 						</div>
 						<div class="finput">
@@ -182,7 +201,7 @@
 								<label>Giới tính:</label>
 							</div>
 							<div class="f_input">
-								<input type="text"  id="gioitinh" placeholder="Enter giới tính" name="gioitinh">
+								<input type="text"  id="gioitinh" placeholder="Enter giới tính" name="gioitinh" required>
 							</div>
 						</div>
 						<div class="finput">
@@ -190,7 +209,7 @@
 								<label>Ngày sinh:</label>
 							</div>
 							<div class="f_input">
-								<input type="text"  id="ngaysinh" placeholder="Enter ngày sinh" name="ngaysinh">
+								<input type="text"  id="ngaysinh" placeholder="Enter ngày sinh" name="ngaysinh" required>
 							</div>
 						</div>
 						<div class="finput">
@@ -198,7 +217,7 @@
 								<label>Quê quán:</label>
 							</div>
 							<div class="f_input">
-								<input type="text"  id="quequan" placeholder="Enter quê quán" name="quequan">
+								<input type="text"  id="quequan" placeholder="Enter quê quán" name="quequan" required>
 							</div>
 						</div>
 						<div class="finput">
@@ -206,7 +225,7 @@
 								<label>Địa chỉ:</label>
 							</div>
 							<div class="f_input">
-								<input type="text"  id="diachi" placeholder="Enter địa chỉ" name="diachi">
+								<input type="text"  id="diachi" placeholder="Enter địa chỉ" name="diachi" required>
 							</div>
 						</div>
 						<div class="finput">
@@ -214,7 +233,7 @@
 								<label>Môn học:</label>
 							</div>
 							<div class="f_input">
-								<input type="text"  id="monhoc" placeholder="Enter môn học" name="monhoc">
+								<input type="text"  id="monhoc" placeholder="Enter môn học" name="monhoc" required>
 							</div>
 						</div>
 						<div class="finput">
@@ -222,11 +241,11 @@
 								<label>Password:</label>
 							</div>
 							<div class="f_input">
-								<input type="text"  id="pwd" placeholder="Enter password" name="pwd">
+								<input type="text"  id="pwd" placeholder="Enter password" name="pwd" required>
 							</div>
 						</div>
 						<br/>
-						<button type="submit" class="btn btn-default" style="margin-left: 600px; color: blue">Thêm</button>
+						<button type="submit" class="btn btn-default" style="margin-left: 600px; color: blue; width: 88px  ">Thêm</button>
 					</form>
 				</div>
 				
@@ -238,7 +257,7 @@
 					
 					<br/>
 					
-					<table border="1px">
+					<table >
 						<tr>
 							<th>Username</th>
 							<th>Họ và tên</th>
@@ -358,7 +377,7 @@
 					
 					<br/>
 					
-					<table border="1px">
+					<table >
 						<tr>
 							<th>Username</th>
 							<th>Họ và tên</th>
@@ -473,7 +492,7 @@
 				<div id="DSSV" class="tab-pane fade">
 					<h3>DANH SÁCH SINH VIÊN</h3>
 					<hr>
-					<table border="1px">
+					<table>
 						<tr>
 							<th>Username</th>
 							<th>Họ và tên</th>
@@ -573,7 +592,7 @@
 								<label>Username:</label>
 							</div>
 							<div class="f_input">
-								<input type="email" id="SVemail" placeholder="Enter email" name="email" height="20px;">
+								<input type="email" id="SVemail" placeholder="Enter email" name="email" height="20px;" required>
 							</div>
 						</div> 
 						<div class="finput">
@@ -581,7 +600,7 @@
 								<label>Họ và tên:</label>
 							</div>
 							<div class="f_input">
-								<input type="text"  id="SVhoten" placeholder="Enter họ và tên" name="hoten">
+								<input type="text"  id="SVhoten" placeholder="Enter họ và tên" name="hoten" required>
 							</div>
 						</div>
 						<div class="finput">
@@ -589,7 +608,7 @@
 								<label>Giới tính:</label>
 							</div>
 							<div class="f_input">
-								<input type="text"  id="SVgioitinh" placeholder="Enter giới tính" name="gioitinh">
+								<input type="text"  id="SVgioitinh" placeholder="Enter giới tính" name="gioitinh" required>
 							</div>
 						</div>
 						<div class="finput">
@@ -597,7 +616,7 @@
 								<label>Ngày sinh:</label>
 							</div>
 							<div class="f_input">
-								<input type="text"  id="SVngaysinh" placeholder="Enter ngày sinh" name="ngaysinh">
+								<input type="text"  id="SVngaysinh" placeholder="Enter ngày sinh" name="ngaysinh" required>
 							</div>
 						</div>
 						<div class="finput">
@@ -605,7 +624,7 @@
 								<label>Quê quán:</label>
 							</div>
 							<div class="f_input">
-								<input type="text"  id="SVquequan" placeholder="Enter quê quán" name="quequan">
+								<input type="text"  id="SVquequan" placeholder="Enter quê quán" name="quequan" required>
 							</div>
 						</div>
 						<div class="finput">
@@ -613,7 +632,7 @@
 								<label>Địa chỉ:</label>
 							</div>
 							<div class="f_input">
-								<input type="text"  id="SVdiachi" placeholder="Enter địa chỉ" name="diachi">
+								<input type="text"  id="SVdiachi" placeholder="Enter địa chỉ" name="diachi" required>
 							</div>
 						</div>
 						<div class="finput">
@@ -621,11 +640,11 @@
 								<label>Password:</label>
 							</div>
 							<div class="f_input">
-								<input type="text"  id="SVpwd" placeholder="Enter password" name="pwd">
+								<input type="text"  id="SVpwd" placeholder="Enter password" name="pwd" required>
 							</div>
 						</div>
 						<br/>
-						<button type="submit" class="btn btn-default" style="margin-left: 600px; color: blue">Thêm</button>
+						<button type="submit" class="btn btn-default" style="margin-left: 600px; color: blue; width: 88px">Thêm</button>
 					</form>
 				</div>
 				<div id="EditSV" class="tab-pane fade">
@@ -636,7 +655,7 @@
 					
 					<br/>
 					
-					<table border="1px">
+					<table>
 						<tr>
 							<th>Username</th>
 							<th>Họ và tên</th>
@@ -745,7 +764,7 @@
 					
 					<br/>
 					
-					<table border="1px">
+					<table>
 						<tr>
 							<th>Username</th>
 							<th>Họ và tên</th>
@@ -849,7 +868,7 @@
 				<div id="DSTB" class="tab-pane fade">
 					<h3>DANH SÁCH THÔNG BÁO</h3>
 					<hr>
-					<table border="1px">
+					<table >
 						<tr>
 							<th>STT</th>
 							<th>Tiêu đề</th>
@@ -904,7 +923,7 @@
 								<label>Tiêu đề:</label>
 							</div>
 							<div class="f_input">
-								<input type="text" placeholder="Enter tiêu đề" name="" height="20px;">
+								<input type="text" placeholder="Enter tiêu đề" name="" height="20px;" required>
 							</div>
 						</div> 
 						<div class="finput">
@@ -912,7 +931,7 @@
 								<label>Nội dung:</label>
 							</div>
 							<div class="f_input">
-								<input type="text" placeholder="Enter nội dung" name="" height="20px;">
+								<input type="text" placeholder="Enter nội dung" name="" height="20px;" required>
 							</div>
 						</div> 
 						<div class="finput">
@@ -920,7 +939,7 @@
 								<label>Người tạo:</label>
 							</div>
 							<div class="f_input">
-								<input type="text" placeholder="Enter người tạo" name="" height="20px;">
+								<input type="text" placeholder="Enter người tạo" name="" height="20px;" required>
 							</div>
 						</div> 
 						<div class="finput">
@@ -928,11 +947,11 @@
 								<label>Thời gian tạo:</label>
 							</div>
 							<div class="f_input">
-								<input type="text" placeholder="Enter thời gian tạo" name="" height="20px;">
+								<input type="text" placeholder="Enter thời gian tạo" name="" height="20px;" required>
 							</div>
 						</div>
 						<br/>
-						<button type="submit" class="btn btn-default" style="margin-left: 600px; color: blue">Thêm</button>
+						<button type="submit" class="btn btn-default" style="margin-left: 600px; color: blue; width: 88px">Thêm</button>
 					</form>
 				</div>
 				
@@ -944,7 +963,8 @@
 					
 					<br/>
 					
-						<table border="1px">
+					<table >
+						
 						<tr>
 							<th>STT</th>
 							<th>Tiêu đề</th>
@@ -958,7 +978,6 @@
 							<td>Ngày 12-11-2018 sẽ có một kì thi khảo sát chất lượng đầu khoá</td>
 							<td>Nguyễn Tuấn Kiệt</td>
 							<td>3-11-2018</td>
-							<td><a>Chỉnh Sửa</a></td>
 						</tr>
 						<tr>
 							<td>2</td>
@@ -966,7 +985,6 @@
 							<td>Ngày 12-11-2018 sẽ có một kì thi khảo sát chất lượng đầu khoá</td>
 							<td>Nguyễn Tuấn Kiệt</td>
 							<td>3-11-2018</td>
-							<td><a>Chỉnh Sửa</a></td>
 						</tr>
 						<tr>
 							<td>3</td>
@@ -974,7 +992,6 @@
 							<td>Ngày 12-11-2018 sẽ có một kì thi khảo sát chất lượng đầu khoá</td>
 							<td>Nguyễn Tuấn Kiệt</td>
 							<td>3-11-2018</td>
-							<td><a>Chỉnh Sửa</a></td>
 						</tr>
 						<tr>
 							<td>4</td>
@@ -982,7 +999,6 @@
 							<td>Ngày 12-11-2018 sẽ có một kì thi khảo sát chất lượng đầu khoá</td>
 							<td>Nguyễn Tuấn Kiệt</td>
 							<td>3-11-2018</td>
-							<td><a>Chỉnh Sửa</a></td>
 						</tr>
 						<tr>
 							<td>5</td>
@@ -990,9 +1006,9 @@
 							<td>Ngày 12-11-2018 sẽ có một kì thi khảo sát chất lượng đầu khoá</td>
 							<td>Nguyễn Tuấn Kiệt</td>
 							<td>3-11-2018</td>
-							<td><a>Chỉnh Sửa</a></td>
 						</tr>
 						
+					
 					</table>
 				</div>
 				
@@ -1004,7 +1020,7 @@
 					
 					<br/>
 					
-					<table border="1px">
+					<table>
 						<tr>
 							<th>STT</th>
 							<th>Tiêu đề</th>
@@ -1018,7 +1034,6 @@
 							<td>Ngày 12-11-2018 sẽ có một kì thi khảo sát chất lượng đầu khoá</td>
 							<td>Nguyễn Tuấn Kiệt</td>
 							<td>3-11-2018</td>
-							<td><a>Xoá</a></td>
 						</tr>
 						<tr>
 							<td>2</td>
@@ -1026,7 +1041,6 @@
 							<td>Ngày 12-11-2018 sẽ có một kì thi khảo sát chất lượng đầu khoá</td>
 							<td>Nguyễn Tuấn Kiệt</td>
 							<td>3-11-2018</td>
-							<td><a>Xoá</a></td>
 						</tr>
 						<tr>
 							<td>3</td>
@@ -1034,7 +1048,6 @@
 							<td>Ngày 12-11-2018 sẽ có một kì thi khảo sát chất lượng đầu khoá</td>
 							<td>Nguyễn Tuấn Kiệt</td>
 							<td>3-11-2018</td>
-							<td><a>Xoá</a></td>
 						</tr>
 						<tr>
 							<td>4</td>
@@ -1042,7 +1055,6 @@
 							<td>Ngày 12-11-2018 sẽ có một kì thi khảo sát chất lượng đầu khoá</td>
 							<td>Nguyễn Tuấn Kiệt</td>
 							<td>3-11-2018</td>
-							<td><a>Xoá</a></td>
 						</tr>
 						<tr>
 							<td>5</td>
@@ -1050,7 +1062,6 @@
 							<td>Ngày 12-11-2018 sẽ có một kì thi khảo sát chất lượng đầu khoá</td>
 							<td>Nguyễn Tuấn Kiệt</td>
 							<td>3-11-2018</td>
-							<td><a>Xoá</a></td>
 						</tr>
 					</table>
 				</div>
@@ -1058,7 +1069,12 @@
 
 		</div>
 	</div>
-
+<script>
+	function Dangxuat()
+	{
+		
+		}
+	</script>
 <footer>
 <div class="container" style="margin-top: 200px; margin-bottom: 10px;">
 	<p style="color: black">

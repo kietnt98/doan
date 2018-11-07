@@ -167,3 +167,6 @@ form.search::after {
 #DeleteTB table{
 	width: 100%;
 }
+table, td, th{
+	border: 1px solid black;
+}

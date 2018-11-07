@@ -46,14 +46,71 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right" style="">
         <li><a href="Trangchu.jsp" style="color: #000000">Trang chủ</a></li>
-        <li><a href="DangNhap.jsp" style="color: #000000">Đăng nhập</a></li>
+        <li><a data-toggle="modal" href="#Dangnhap" style="color: #000000">Đăng nhập</a></li>
         <li><a href="DangKi.jsp" style="color: #000000">Đăng kí</a></li>
         <li><a href="#" style="color: #000000">Điều khoản</a></li>
       </ul>
     </div>
   </div>
 </nav>
+<div id="Dangnhap" class="modal fade" tabIndex="-1" role="dialog" aria-labelledby="mymodallabel" aria-hidden="true ">
+	<div class="modal-dialog">	
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 style="color: blue">Đăng nhập</h2>
+			</div>
+			<div class="modal-body">
+					  <form action="/action_page.php">
+        			<input type="radio" value="Admin" name="gender" style="margin-left: 10px;"> Admin
+        			<input type="radio" value="Giáo viên" name="gender" style="margin-left: 10px;"> Giáo viên
+        			<input type="radio" value="Sinh viên" name="gender" style="margin-left: 10px;"> Sinh viên<br/>
+                   <div style="margin-top: 19px;">
+                   		<div class="finput">
+							<div class="l_input">
+								<label>Username:</label>
+							</div>
+							<div class="f_input">
+								<input type="email" id="SVemail" placeholder="Enter email" name="email" height="20px;">
+							</div>
+					</div> 
+                    <div class="finput">
+							<div class="l_input">
+								<label>Password:</label>
+							</div>
+							<div class="f_input">
+								<input type="text"  id="SVpwd" placeholder="Enter password" name="pwd">
+							</div>
+					</div>
+                   </div>
+                   <br/>
+                    <div style="float: left; margin-left: 268px; margin-top: -3px;">
+                    	<a href="#" style=" text-decoration: none;">Chưa có tài khoản</a>
+                    </div>
+                    <div style="float: left; margin-left: 424px; margin-top: -20px">
+                    	<a href="#" style=" text-decoration: none;">Quên mật khẩu</a>
+                    </div>
+        	</form>
+			</div>
+			<div class="modal-footer">
+				<button style="margin-left: 300px; margin-top: 5px;" type="submit" onClick="openWindow()">Đăng nhập</button>
+			</div>
+		</div>
+		
 	</div>
+</div>
+	</div>
+	<script>
+		function openWindow()
+	{
+		
+		var checkbox = document.getElementsByName("gender");
+                for (var i = 0; i < checkbox.length; i++){
+                    if (checkbox[i].checked === true & checkbox[i].value==="Admin"){
+                    	 window.location.href="./HomeAdmin.jsp"
+                    }
+                }
+		}
+        </script>
 	<div class="container">
   <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top: 100px">
     <!-- Indicators -->

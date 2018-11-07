@@ -43,9 +43,7 @@ input:focus + .input-icon i {
 input:focus + .input-icon:after {
   border-right-color: #7ed321;
 }
-input[type="radio"] {
-  display: none;
-}
+
 input[type="radio"] + label,
 select {
   display: inline-block;
@@ -74,6 +72,9 @@ select:active {
   border-color: #64ac15;
 }
 input[type="checkbox"] {
+  display: none;
+}
+input[type="radio"] {
   display: none;
 }
 input[type="checkbox"] + label {
